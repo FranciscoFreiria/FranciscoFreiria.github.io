@@ -9,8 +9,8 @@
   box-sizing: border-box;
 }
 :root{
-    --primary-color: #771624;
-    --link-color: #ee0d0d;
+    --primary-color: #58a4c7;
+    --link-color: #6946a6;
     --text-color: black;
 }
 html {
@@ -18,8 +18,8 @@ html {
 }
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #d9b99b;
-    color: #f5f5dc;
+    background-image: url("./files/background.jpg");
+    color: #ffffff;
 }
 
 /* common styles
@@ -158,7 +158,7 @@ So, the font size will be 20px on small screens, 8% of viewport width on medium 
     margin-top: 1rem;
 }
 .downloadButton:hover {
-    color: var(--primary-color);
+    color: var(--link-color);
 }
 @media only screen and (max-width: 768px) {
     .profile_container {

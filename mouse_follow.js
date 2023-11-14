@@ -4,7 +4,9 @@ if (!isMobile)
 {
     const coords = { x: 0, y: 0 };
     const circles = document.querySelectorAll(".circle");
-    const colors = ["#771624", "#81282b", "#8a3832", "#94473a", "#9d5543", "#a6644d", "#ae7258", "#b78064", "#bf8e71", "#c89c7e", "#d0ab8c", "#d9b99b"];
+    /*const colors = ["#771624", "#81282b", "#8a3832", "#94473a", "#9d5543", "#a6644d", "#ae7258", "#b78064", "#bf8e71", "#c89c7e", "#d0ab8c", "#d9b99b"];*/
+	/*const colors = ["#146cf6", "#188af0", "#00b7d8", "#00b4d0", "#00e54b", "#00f800"];*/
+	const colors = ["#80ffdb", "#72efdd", "#64dfdf", "#56cfe1", "#48bfe3", "#4ea8de", "#5390d9", "#5e60ce", "#6930c3", "#7400b8"];
 
     circles.forEach(function(circle, index) {
         circle.x = 0;
@@ -34,8 +36,8 @@ if (!isMobile)
     
             // Position the next circle behind the one before it
             const nextCircle = circles[index + 1] || circles[0];
-            x += (nextCircle.x - x) * 0.25;
-            y += (nextCircle.y - y) * 0.25;
+            x += (nextCircle.x - x) * 0.5;
+            y += (nextCircle.y - y) * 0.5;
         });
     
         requestAnimationFrame(animateCircles);
